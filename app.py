@@ -6,7 +6,7 @@ import os
 st.title("CSV Data Viewer")
 
 # Default file path to auto-load
-default_file_path = r"C:\Users\Rajiv\Downloads\MRU\tsx_350\OPEN_ind_tsx_350list.csv"
+default_file_path = r"https://github.com/iblend171/Trade_Lots_POC/blob/main/OPEN_ind_tsx_350list.csv"
 
 # Function to load the CSV
 def load_csv(file_path):
