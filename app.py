@@ -1,14 +1,15 @@
 import streamlit as st
 import pandas as pd
-import os
 
 # Title of the Streamlit app
 st.title("CSV Data Viewer")
 
-# Default file path to auto-load
-default_file_path = "https://github.com/iblend171/Trade_Lots_POC/blob/main/OPEN_ind_tsx_350list.csv"
+# GitHub raw file path to auto-load
+default_file_path = (
+    "https://raw.githubusercontent.com/iblend171/Trade_Lots_POC/main/OPEN_ind_tsx_350list.csv"
+)
 
-# Function to load the CSV
+# Function to load the CSV from the URL
 def load_csv(file_path):
     try:
         return pd.read_csv(file_path)
@@ -16,15 +17,9 @@ def load_csv(file_path):
         st.error(f"Error loading the file: {e}")
         return None
 
-# Check if the default CSV exists and load it
-if os.path.exists(default_file_path):
-    st.info(f"Loaded file: {default_file_path}")
-    df = load_csv(default_file_path)
-else:
-    st.error("Default CSV file not found. Please ensure it exists at the specified path.")
-    df = None
+# Load the CSV and display it
+df = load_csv(default_file_path)
 
-# Display the DataFrame if it was loaded successfully
 if df is not None:
     st.subheader("Tabular Data:")
     st.dataframe(df)
