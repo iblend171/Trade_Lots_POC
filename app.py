@@ -4,7 +4,7 @@ import pandas as pd
 # Title of the Streamlit app
 st.title("CSV Data Viewer")
 
-# GitHub raw file path to auto-load
+# GitHub raw file path to auto-load the CSV
 default_file_path = (
     "https://raw.githubusercontent.com/iblend171/Trade_Lots_POC/main/OPEN_ind_tsx_350list.csv"
 )
