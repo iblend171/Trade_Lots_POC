@@ -5,9 +5,9 @@ from datetime import date, datetime, timedelta
 from functools import reduce
 from dateutil import parser
 import yfinance as yf
+
 import warnings
 warnings.filterwarnings("ignore")
-
 # Title of the Streamlit app
 st.title("CSV Data Viewer")
 
