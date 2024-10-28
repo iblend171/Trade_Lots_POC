@@ -2,12 +2,14 @@ import os
 import streamlit as st
 import numpy as np
 import pandas as pd
+# from datetime import dt
 from datetime import date, datetime, timedelta
 from functools import reduce
 from dateutil import parser
 import yfinance as yf
 import warnings
 warnings.filterwarnings("ignore")
+
 # Title of the Streamlit app
 st.title("CSV Data Viewer")
 
@@ -239,7 +241,7 @@ tsx_350 = pd.read_csv(r"TSX_100.csv")
 # tsx_350 = ddf['Symbol'].to_list()
 cut_off = 1
 fail_list = []
-for t in tsx_350['Symbol'].to_list()[:10]:
+for t in tsx_350['Symbol'].to_list()[:100]:
     try:
         print(t)
         df = yf.download(t +'.TO', start=start, end=end, progress=False)
@@ -386,32 +388,34 @@ df_lul_first = df_lul_first[['Symbol', 'Total_Events', 'Total_Profit_Events', 'T
 
 # Step 3: Merge with df_ful on 'Symbol'
 df_merged = df_ful.merge(df_lul_first, on='Symbol', how='right')
+df_merged['Symbol'] = df_merged['Symbol'].str.replace('.TO', '')
+df_merged['Close_Date'] = df_merged['Close_Date'].dt.date
+df_merged['Profit_Ratio'] = df_merged['Profit_Ratio']*100
 
 # Step 4: Select the first entry for each 'Symbol' in df_merged
 df_select = df_merged.groupby('Symbol').first().reset_index()
 
 # Define the bins and labels for the ranges
-bins = [0.85, 0.9, 0.95, 1.0]
-labels = ['0.85-0.9', '0.9-0.95', '0.95-1.0']
+bins = [85, 90, 95, 100]
+labels = ['85-90', '90-95', '95-100']
 
 # Create a new column that categorizes 'Profit_Ratio' based on the bins
 df_select['Profit_Ratio_Range'] = pd.cut(df_select['Profit_Ratio'], bins=bins, labels=labels, include_lowest=True)
 
 # Slice the DataFrame based on the new 'Profit_Ratio_Range' column
-df_95_100 = df_select[df_select['Profit_Ratio_Range'] == '0.95-1.0']
-df_90_95 = df_select[df_select['Profit_Ratio_Range'] == '0.9-0.95']
-df_85_90 = df_select[df_select['Profit_Ratio_Range'] == '0.85-0.9']
+df_95_100 = df_select[df_select['Profit_Ratio_Range'] == '95-100']
+df_90_95 = df_select[df_select['Profit_Ratio_Range'] == '90-95']
+df_85_90 = df_select[df_select['Profit_Ratio_Range'] == '85-90']
 
 if df is not None:
     st.subheader("Tabular Data:")
-    st.dataframe(df_95_100)
-    st.dataframe(df_90_95)
-    st.dataframe(df_85_90)
+    st.dataframe(df_95_100[['Symbol','Trade','Close_Date','Entry','Stop_Loss','Profit_Ratio']].head(10))
+    st.dataframe(df_90_95[['Symbol','Trade','Close_Date','Entry','Stop_Loss','Profit_Ratio']].head(10))
+    st.dataframe(df_85_90[['Symbol','Trade','Close_Date','Entry','Stop_Loss','Profit_Ratio']].head(10))
 
-    st.subheader("Summary Statistics:")
-    st.write(df_select)
+    # st.subheader("Summary Statistics:")
+    # st.write(df_select)
 
 # print(df.head())
-
 
 os.system("streamlit run app.py")
