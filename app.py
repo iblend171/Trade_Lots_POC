@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import numpy as np
 import pandas as pd
@@ -5,7 +6,6 @@ from datetime import date, datetime, timedelta
 from functools import reduce
 from dateutil import parser
 import yfinance as yf
-
 import warnings
 warnings.filterwarnings("ignore")
 # Title of the Streamlit app
@@ -41,7 +41,7 @@ def plusbox(dataframe):
     for t in reversed(range(10,m)):
         
     # Find max high for 11 periods using iterator t and compare with latest period high
-        date = dataframe['Date'].iloc[t]
+        date = dataframe['Date'].iloc[t].date()
         max_array = dataframe['High'].iloc[t-10:t+5].max()
         # Find local high event trigger
         if (dataframe['High'].iloc[t] == max_array) and (t < (m-4)):
@@ -54,7 +54,7 @@ def plusbox(dataframe):
             for k in range(5,m-t):
 #                 print(t)
             # box closes if trend reverses...
-                if dataframe['Low'].iloc[t+k] > trend:
+                if ((dataframe['Low'].iloc[t+k]) > trend):
                 # compare trend with 5 period box high
                     if (dataframe['Low'].iloc[t:t+5].min() >= trend):
                         boxes.append([0, 1, date, t, period_start, trend, k, dataframe['Date'].iloc[t + k]])
@@ -64,7 +64,7 @@ def plusbox(dataframe):
                         boxes.append([0, 1, date, t, period_start, dataframe['Low'].iloc[t:t+5].min(), k, dataframe['Date'].iloc[t + k]])
 #                         print(0, 1, date, t, period_start, dataframe['Low'].iloc[t:t+5].min(), k, dataframe['Date'].iloc[t + k])
                         break
-                elif dataframe['Low'].iloc[t+k] <= trend:
+                elif (dataframe['Low'].iloc[t+k] <= trend):
                 # update trend for new lows
                     trend = dataframe['Low'].iloc[t+k]
 
@@ -76,7 +76,7 @@ def minusbox(dataframe):
     boxes = []
     for t in reversed(range(10,m)):
     # Find min low for 11 periods using iterator t and compare with latest period low
-        date = dataframe['Date'].iloc[t]
+        date = dataframe['Date'].iloc[t].date()
         min_array = dataframe['Low'].iloc[t-10:t+5].min()
         if (dataframe['Low'].iloc[t] == min_array) and (t < (m-4)):
 #             < dataframe[(dataframe['Instrument'] == instrument)]['Low'].iloc[t:t+5].min()
@@ -88,7 +88,7 @@ def minusbox(dataframe):
 #             print(0, 0, date, t, dataframe['High'].iloc[t:t+5].max(), period_start,  5, dataframe['Date'].iloc[t + 4])
             for k in range(5,m-t):
             # box closes if trend reverses...
-                if dataframe['High'].iloc[t+k] < trend:
+                if (dataframe['High'].iloc[t+k] < trend):
                 # compare trend with 5 period box high
                     if (dataframe['High'].iloc[t:t+5].max() <= trend):
                         boxes.append([1, 0, date, t, trend, period_start, k, dataframe['Date'].iloc[t + k]])
@@ -98,7 +98,7 @@ def minusbox(dataframe):
                         boxes.append([1, 0, date, t, dataframe['High'].iloc[t:t+5].max(), period_start, k, dataframe['Date'].iloc[t + k]])
 #                         print(1, 0, date, t, dataframe['High'].iloc[t:t+5].max(), period_start, k, dataframe['Date'].iloc[t + k])
                         break
-                elif dataframe['High'].iloc[t+k] >= trend:
+                elif (dataframe['High'].iloc[t+k] >= trend):
                 # update trend for new lows
                     trend = dataframe['High'].iloc[t+k]
 
@@ -113,13 +113,14 @@ def box_break(box_df, df):
         row_list = box_df.iloc[i].values.flatten().tolist()
 #       # Because box length is int value that includes start box index i.e. starts from 1 not zero
         box_close = box_df['Record'].iloc[i] + box_df['Length'].iloc[i] 
+        # print("Hey")
         if box_df['Trade'].iloc[i] == 1:
         # Find Max values reached in the next two weeks i.e. 10 periods
             max_value = df['High'][box_close+1:box_close + wait].max()
             min_value = df['Low'][box_close+1:box_close + wait].min()
             # Minus 1 percent profit
-            minus_one = box_df['Resistance'].iloc[i] - (box_df['Resistance'].iloc[i] * 0.01)
-            profit_point_five = minus_one + (0.005*minus_one)
+            minus_one = (box_df['Resistance'].iloc[i] - (box_df['Resistance'].iloc[i] * 0.01))
+            profit_point_five = (minus_one + (0.005*minus_one))
             # Stop Loss @ 2 percent
             stop_loss = minus_one - (minus_one*0.02)
             if (max_value >= profit_point_five) & (df[df['High'] == max_value]['Date'] > box_df['Close_Date'].iloc[i]).any() :
@@ -233,16 +234,17 @@ df_lul = pd.DataFrame(columns = ['Trade', 'Polarity', 'Date','Record','Resistanc
                                      'CMP','CMP_Ready', 'Max_Profit','Max_Loss','Max_Profit_Date','Max_Loss_Date','Trade_Record',  'Profit', 'Profit_%',  'P/L',
                                   'Symbol', 'currency', 'exchange', 'company_name', 'company_id'])
 
-tsx_350 = pd.read_csv(r"C:\Users\Rajiv\Downloads\MRU\TSX_100.csv")
+tsx_350 = pd.read_csv(r"TSX_100.csv")
 
 # tsx_350 = ddf['Symbol'].to_list()
 cut_off = 1
 fail_list = []
-for t in tsx_350['Symbol'].to_list()[:5]:
+for t in tsx_350['Symbol'].to_list()[:10]:
     try:
         print(t)
         df = yf.download(t +'.TO', start=start, end=end, progress=False)
-
+        # Remove the multi-index from columns by dropping the 'Ticker' level
+        df.columns = df.columns.droplevel(1)
         df['Date'] =  pd.to_datetime(df.index)
         df.index = pd.RangeIndex(len(df.index))
         df = df.infer_objects()
@@ -263,40 +265,39 @@ for t in tsx_350['Symbol'].to_list()[:5]:
         boxes_df['Amplitude'] = round(((abs(boxes_df['Resistance'] - boxes_df['Support'])/boxes_df['Support'])*100),2)
 
         boxes_df['Entry'] = np.where(boxes_df['Trade'] == 1, round(boxes_df['Resistance'] - (entry*boxes_df['Resistance']),4)
-                                     , round(boxes_df['Support'] + (entry*boxes_df['Support']),4))
+                                        , round(boxes_df['Support'] + (entry*boxes_df['Support']),4))
 
         boxes_df['Stop_Loss'] = np.where(boxes_df['Trade'] == 1, round(abs(boxes_df['Entry'] - stop_loss*(abs(boxes_df['Entry']))),4)
-                                     , round(abs(boxes_df['Entry'] + stop_loss*(abs(boxes_df['Entry']))),4))
+                                        , round(abs(boxes_df['Entry'] + stop_loss*(abs(boxes_df['Entry']))),4))
 
-        boxes_df['Yearly_High'] = df[df['Date'].dt.date >= (datetime.now().date() - timedelta(365))]['High'].max()
-        boxes_df['Yearly_Low'] = df[df['Date'].dt.date >= (datetime.now().date() - timedelta(365))]['Low'].min()
+        # boxes_df['Yearly_High'] = df[df['Date'].dt.date >= (datetime.now().date() - timedelta(365))]['High'].max()
+        # boxes_df['Yearly_Low'] = df[df['Date'].dt.date >= (datetime.now().date() - timedelta(365))]['Low'].min()
 
 
-        boxes_df['Yearly_High_Date'] = df.loc[df['High'] == (df[df['Date'].dt.date >= 
-                                                                (datetime.now().date() - timedelta(365))]['High'].max())]['Date'][-1:].item().date()
-        boxes_df['Yearly_Low_Date'] = df.loc[df['Low'] == (df[df['Date'].dt.date >= 
-                                                            (datetime.now().date() - timedelta(365))]['Low'].min())]['Date'][-1:].item().date()
-        boxes_df['CMP'] = df['Close'].iloc[-1]
-        boxes_df['Volume'] = df['Volume'].iloc[-1]
+        # boxes_df['Yearly_High_Date'] = df.loc[df['High'] == (df[df['Date'].dt.date >= 
+        #                                                         (datetime.now().date() - timedelta(365))]['High'].max())]['Date'][-1:].item().date()
+        # boxes_df['Yearly_Low_Date'] = df.loc[df['Low'] == (df[df['Date'].dt.date >= 
+        #                                                     (datetime.now().date() - timedelta(365))]['Low'].min())]['Date'][-1:].item().date()
+        # boxes_df['CMP'] = df['Close'].iloc[-1]
+        # boxes_df['Volume'] = df['Volume'].iloc[-1]
 
-    #     print(boxes_df)
+        # print(boxes_df.head(1))
         #Ready Percentage 
         rp = 0.03  
-        boxes_df['CMP_Ready'] = np.where((boxes_df['CMP'] >= (boxes_df['Entry'] - rp*(boxes_df['Entry'])))
+        # boxes_df['CMP_Ready'] = np.where((boxes_df['CMP'] >= (boxes_df['Entry'] - rp*(boxes_df['Entry'])))
     #                                      & ((df['High'].iloc[-5:] < boxes_df['Entry'].iloc[0]).all())
-                                         & (boxes_df['CMP'] < (boxes_df['Entry'])), 1, 0)
+                                            # & (boxes_df['CMP'] < (boxes_df['Entry'])), 1, 0)
 
-        boxes_df['Fresh_Trigger'] = box_fresh(boxes_df, df)
+        # boxes_df['Fresh_Trigger'] = box_fresh(boxes_df, df)
         lulu = box_break(boxes_df, df)
         fulu = box_open(boxes_df, df)
-
+        # print(lulu[0])
 
         # Compute Closed Boxes
         pl_df = pd.DataFrame(lulu, columns = ['Trade', 'Polarity', 'Date','Record','Resistance','Support', 'Length', 'Close_Date',
-                                          'Amplitude','Entry', 'Stop_Loss', 'Yearly_High', 'Yearly_Low','Yearly_High_Date', 'Yearly_Low_Date',
-                                          'CMP', 'Volume', 'CMP_Ready', 'Fresh_Trigger', 'Max_Profit', 'Max_Loss','Max_Profit_Date',
-                                          'Max_Loss_Date', 'Trade_Record', 'Profit', 'Profit_%', 'P/L'])
-
+                                            'Amplitude','Entry', 'Stop_Loss', 'Max_Profit', 'Max_Loss','Max_Profit_Date',
+                                            'Max_Loss_Date', 'Trade_Record', 'Profit', 'Profit_%', 'P/L'])
+        # print(pl_df)
         pl_df['Date'] =  pd.to_datetime(pl_df['Date'])
         pl_df['Symbol'] = t +'.TO'
         pl_df['currency'] = "CAD"
@@ -342,13 +343,13 @@ for t in tsx_350['Symbol'].to_list()[:5]:
         # Stop Loss Analysis
 
         pl_df['Stop_Loss_2%'] = pl_df[(pl_df['Max_Loss'] <= (pl_df['Entry']- 0.02*(pl_df['Entry']))) 
-                                      & (pl_df['Max_Loss_Date'] < pl_df['One_%_Profit_Date'])].shape[0]
+                                        & (pl_df['Max_Loss_Date'] < pl_df['One_%_Profit_Date'])].shape[0]
         pl_df['Stop_Loss_5%'] = pl_df[(pl_df['Max_Loss'] <= (pl_df['Entry']- 0.05*(pl_df['Entry']))) 
-                                      & (pl_df['Max_Loss_Date'] < pl_df['One_%_Profit_Date'])].shape[0]
+                                        & (pl_df['Max_Loss_Date'] < pl_df['One_%_Profit_Date'])].shape[0]
         pl_df['Stop_Loss_7%'] = pl_df[(pl_df['Max_Loss'] <= (pl_df['Entry']- 0.07*(pl_df['Entry']))) 
-                                      & (pl_df['Max_Loss_Date'] < pl_df['One_%_Profit_Date'])].shape[0]
+                                        & (pl_df['Max_Loss_Date'] < pl_df['One_%_Profit_Date'])].shape[0]
         pl_df['Stop_Loss_10%'] = pl_df[(pl_df['Max_Loss'] <= (pl_df['Entry']- 0.1*(pl_df['Entry']))) 
-                                      & (pl_df['Max_Loss_Date'] < pl_df['One_%_Profit_Date'])].shape[0]
+                                        & (pl_df['Max_Loss_Date'] < pl_df['One_%_Profit_Date'])].shape[0]
 
 
         df_lul = pd.concat([df_lul, pl_df], sort=False)
@@ -356,8 +357,7 @@ for t in tsx_350['Symbol'].to_list()[:5]:
         # Compute Open Boxes
 
         fulu_df = pd.DataFrame(fulu, columns = ['Trade', 'Polarity', 'Date','Record','Resistance','Support', 'Length', 'Close_Date',
-                                          'Amplitude','Entry', 'Stop_Loss', 'Yearly_High', 'Yearly_Low','Yearly_High_Date', 'Yearly_Low_Date',
-                                          'CMP', 'Volume','CMP_Ready', 'Fresh_Trigger'])
+                                            'Amplitude','Entry', 'Stop_Loss'])
 
         fulu_df['Date'] =  pd.to_datetime(fulu_df['Date'])
         fulu_df['Symbol'] = t +'.TO'
@@ -367,7 +367,7 @@ for t in tsx_350['Symbol'].to_list()[:5]:
         fulu_df['company_id'] = tsx_350.loc[tsx_350['Symbol'] == t].index[0] + 1
 
         df_ful = pd.concat([df_ful, fulu_df], sort=False)
-
+        # print(pl_df)
         
     except:
         fail_list.append(t)
@@ -387,15 +387,31 @@ df_lul_first = df_lul_first[['Symbol', 'Total_Events', 'Total_Profit_Events', 'T
 # Step 3: Merge with df_ful on 'Symbol'
 df_merged = df_ful.merge(df_lul_first, on='Symbol', how='right')
 
-# print(df_merged)
+# Step 4: Select the first entry for each 'Symbol' in df_merged
+df_select = df_merged.groupby('Symbol').first().reset_index()
+
+# Define the bins and labels for the ranges
+bins = [0.85, 0.9, 0.95, 1.0]
+labels = ['0.85-0.9', '0.9-0.95', '0.95-1.0']
+
+# Create a new column that categorizes 'Profit_Ratio' based on the bins
+df_select['Profit_Ratio_Range'] = pd.cut(df_select['Profit_Ratio'], bins=bins, labels=labels, include_lowest=True)
+
+# Slice the DataFrame based on the new 'Profit_Ratio_Range' column
+df_95_100 = df_select[df_select['Profit_Ratio_Range'] == '0.95-1.0']
+df_90_95 = df_select[df_select['Profit_Ratio_Range'] == '0.9-0.95']
+df_85_90 = df_select[df_select['Profit_Ratio_Range'] == '0.85-0.9']
 
 if df is not None:
     st.subheader("Tabular Data:")
-    st.dataframe(df_merged)
+    st.dataframe(df_95_100)
+    st.dataframe(df_90_95)
+    st.dataframe(df_85_90)
 
     st.subheader("Summary Statistics:")
-    st.write(df.describe())
+    st.write(df_select)
 
 # print(df.head())
-print(pd.__version__)
 
+
+os.system("streamlit run app.py")
