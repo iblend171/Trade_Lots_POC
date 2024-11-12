@@ -1,0 +1,394 @@
+Rank,Company Name,Symbol,marketcap,price (USD),country
+1,Royal Bank Of Canada,RY,1.38E+11,97.68,Canada
+2,Toronto Dominion Bank,TD,1.07E+11,59.47,Canada
+3,Shopify,SHOP,97298685952,75.59,Canada
+4,Canadian National Railway,CNR,82968657920,129.07,Canada
+5,Canadian Pacific Railway,CP,79838126080,85.47,Canada
+6,Enbridge,ENB,74069360640,34.8,Canada
+7,Thomson Reuters,TRI,71160348672,156.95,Canada
+8,Canadian Natural Resources,CNQ,70837977088,65.06,Canada
+9,Bank of Montreal,BMO,68087992320,94.3,Canada
+10,Brookfield Corporation,BN,62479400960,39.95,Canada
+11,Alimentation Couche-Tard,ATD,60405572561,62.69,Canada
+12,Scotiabank,BNS,57557393408,47.34,Canada
+13,Constellation Software,CSU,57486696381,2712.72,Canada
+14,lululemon athletica,LULU,55960657920,443.46,Canada
+15,Suncor Energy,SU,43551449088,33.59,Canada
+16,Manulife Financial,MFC,43444449280,23.99,Canada
+17,CIBC,CM,43218411520,46.32,Canada
+18,TC Energy,TRP,41403289600,39.83,Canada
+19,BCE,BCE,34652848128,37.92,Canada
+20,Restaurant Brands International,QSR,33828818944,75.72,Canada
+21,Cenovus Energy,CVE,32750548992,17.5,Canada
+22,Imperial Oil,IMO,32695894016,60.94,Canada
+23,Loblaw Companies,L,32354317588,102.27,Canada
+24,Sun Life Financial,SLF,31451553792,53.71,Canada
+25,Intact Financial,IFC,29872013838,167.52,Canada
+26,Great-West Lifeco,GWO,29329972016,31.46,Canada
+27,Telus,T,26515603456,17.93,Canada
+28,National Bank of Canada,NA,26022505397,76.93,Canada
+29,CGI,GIB-A,25978361856,111.41,Canada
+30,Barrick Gold,GOLD,25950412800,14.75,Canada
+31,Nutrien,NTR,24997912576,50.44,Canada
+32,Fairfax Financial,FFH,24457391671,996.18,Canada
+33,Agnico Eagle Mines,AEM,24291792896,48.76,Canada
+34,Rogers Communication,RCI-B,24153759744,45.41,Canada
+35,Dollarama,DOL,21689585972,77.12,Canada
+36,Franco-Nevada,FNV,20630724608,107.24,Canada
+37,Teck Resources,TECK-B,19853555712,38.11,Canada
+38,Fortis,FTS,19568678912,39.83,Canada
+39,WSP Global,WSP,19134825472,153.53,Canada
+40,Power Corporation of Canada,POW,19083037071,28.96,Canada
+41,Pembina Pipeline,PPL,18833414144,34.23,Canada
+42,Wheaton Precious Metals,WPM,18479216640,40.74,Canada
+43,Cameco,CCJ,18137860096,41.73,Canada
+44,Hydro One,H,18032463480,30.1,Canada
+45,George Weston,WN,17590963948,129.84,Canada
+46,Brookfield Asset Management,BAM,15860882432,40.57,Canada
+47,Magna International,MGA,15631948800,54.4,Canada
+48,Tourmaline Oil,TOU,14996164872,44.01,Canada
+49,Ivanhoe Mines,IVN,13478679794,10.63,Canada
+50,GFL Environmental,GFL,13108568064,35.43,Canada
+51,Power Financial,PWF-PS,12435013092,13.53,Canada
+52,TFI International,TFII,12224102400,144.53,Canada
+53,Ritchie Bros. Auctioneers,RBA,12173900800,66.68,Canada
+54,Metro,MRU,11972889947,52.74,Canada
+55,OpenText,OTEX,10195062784,38.04,Canada
+56,ARC Resources,ARX,10156152835,17.02,Canada
+57,Emera,EMA,9791582205,35.68,Canada
+58,Stantec,STN,9411398656,82.32,Canada
+59,Saputo,SAP,8841356792,20.84,Canada
+60,CCL Industries,CCL-B,7695894414,43.26,Canada
+61,Toromont,TIH,7644451774,92.88,Canada
+62,Choice Properties REIT,CHP-UN,7373217037,10.19,Canada
+63,FirstService,FSV,7321164288,163.75,Canada
+64,Descartes Systems,DSG,7254276096,85.07,Canada
+65,Topicus,,7132188662,87.09,Canada
+66,TMX Group,X,7046411753,25.47,Canada
+67,iA Financial,IAG,6677609336,63.41,Canada
+68,Element Fleet Management,EFN,6525325656,16.77,Canada
+69,West Fraser Timber,WFG,6455495168,78.86,Canada
+70,Lundin Mining,LUN,6343872140,8.2,Canada
+71,Empire Company,EMP-A,6339001528,25.64,Canada
+72,Canadian Utilities,CU,6307213080,22.75,Canada
+73,Canadian Apartment Properties REIT,CAR-UN,6301020082,37.25,Canada
+74,AltaGas,ALA,6260892791,21.27,Canada
+75,IGM Financial,IGM,6258132006,26.28,Canada
+76,Parkland Corp,PKI,6212546461,35.3,Canada
+77,Canadian Tire,CTC,6160550299,185.12,Canada
+78,CAE,CAE,6125625344,19.22,Canada
+79,First Quantum Minerals,FM,6116909283,8.82,Canada
+80,Kinross Gold,K,6103379456,4.96,Canada
+81,Gildan,GIL,6061408256,35.16,Canada
+82,Onex,ONEX,5909648386,76.27,Canada
+83,Colliers International,CIGI,5895413248,123.62,Canada
+84,Bausch + Lomb,BLCO,5836593152,16.6,Canada
+85,Keyera,KEY,5760725265,25.14,Canada
+86,AtkinsRéalis,ATRL,5636530537,32.11,Canada
+87,MEG Energy,MEG,5471805509,19.44,Canada
+88,Quebecor,QBR-B,5396266477,23.34,Canada
+89,Bombardier Recreational Products,DOO,5167603200,68.41,Canada
+90,Boyd Group,BYD,4877386126,227.15,Canada
+91,Air Canada,AC,4799122706,13.39,Canada
+92,Pan American Silver,PAAS,4713838592,12.93,Canada
+93,Alamos Gold,AGI,4671647232,11.75,Canada
+94,Northland Power,NPI,4462443884,17.56,Canada
+95,Celestica,CLS,4433123840,37.2,Canada
+96,Crescent Point Energy,CPG,4400858624,7.02,Canada
+97,PrairieSky Royalty,PSK,4215523156,17.64,Canada
+98,RioCan REIT,REI-UN,4151479936,13.82,Canada
+99,Whitecap Resources,WCP,4111717363,6.78,Canada
+100,Algonquin Power & Utilities,AQN,4062768896,5.89,Canada
+101,Capstone Copper,CS,3976708489,5.29,Canada
+102,Strathcona Resources,SCR,3958912387,18.48,Canada
+103,Finning,FTT,3730055423,25.9,Canada
+104,NexGen Energy,NXE,3707877120,7.05,Canada
+105,ATS Automation,ATS,3704078848,37.65,Canada
+106,Bombardier,BBD-B,3677562230,37.66,Canada
+107,Xenon Pharmaceuticals,XENE,3675722496,48.83,Canada
+108,Granite Real Estate,GRP-UN,3556765440,55.1,Canada
+109,Enerplus,ERF,3377692416,16.42,Canada
+110,Stella-Jones,SJ,3357849985,58.78,Canada
+111,B2Gold,BTG,3294395904,2.52,Canada
+112,Nuvei,NVEI,3255060224,23.35,Canada
+113,Capital Power,CPX,3237352100,27.66,Canada
+114,Bausch Health,BHC,3171433984,8.67,Canada
+115,Kinaxis,KXS,3165074676,111.07,Canada
+116,ATCO,ACO-X,3146633304,27.72,Canada
+117,Premium Brands,PBH,3047600308,68.29,Canada
+118,Paramount Resources,POU,3038940347,21.12,Canada
+119,SmartCentres REIT,SRU-UN,3037668385,17.84,Canada
+120,Linamar,LNR,3032945442,49.29,Canada
+121,Tricon Residential,TCN,3031396608,11.11,Canada
+122,Telus International,TIXT,3005654528,10.95,Canada
+123,Capstone Infrastructure,CSE-PA,2988618210,9.81,Canada
+124,Methanex,MEOH,2957174016,43.76,Canada
+125,Boardwalk Real Estate Investment Trust,BEI-UN,2941054582,54.6,Canada
+126,Aritzia,ATZ,2915687933,26.4,Canada
+127,Dream Industrial REIT,DIR-UN,2867003803,10,Canada
+128,Baytex Energy,BTE,2866831616,3.39,Canada
+129,Lundin Gold,LUG,2782939589,11.69,Canada
+130,Spin Master,TOY,2636883218,25.43,Canada
+131,E-L Financial,ELF,2633996375,760.89,Canada
+132,Gibson Energy,GEI,2613819560,16.16,Canada
+133,First Capital REIT,FCR-UN,2593659996,12.22,Canada
+134,Osisko Gold Royalties,OR,2569535232,13.85,Canada
+135,EQB (Equitable Bank),EQB,2533906001,66.51,Canada
+136,CT REIT,CRT-UN,2513011125,10.67,Canada
+137,Triple Flag Precious Metals,TFPM,2500832000,12.4,Canada
+138,Maple Leaf Foods,MFI,2342445684,19.13,Canada
+139,Eldorado Gold,EGO,2308678400,11.37,Canada
+140,Secure Energy Services,SES,2294677709,7.94,Canada
+141,Boralex,BLX,2244829287,21.84,Canada
+142,Chartwell Retirement Residences,CSH-UN,2171409182,9.02,Canada
+143,Topaz Energy,TPZ,2146277969,14.84,Canada
+144,TransAlta,TAC,2138310016,6.9,Canada
+145,Canadian Western Bank,CWB,2085090315,21.62,Canada
+146,Filo Mining,FIL,2062532409,15.78,Canada
+147,Lightspeed POS,LSPD,2025328768,13.2,Canada
+148,Winpak,WPK,2000807156,30.78,Canada
+149,Russel Metals,RUS,1993450435,33.01,Canada
+150,Peyto Exploration &amp; Development,PEY,1991848445,10.34,Canada
+151,goeasy,GSY,1980467508,119.11,Canada
+152,Fairfax India Holdings,FIH-U,1976825600,14.6,Canada
+153,Teekay Tankers,TNK,1969959936,57.94,Canada
+154,H&amp;R REIT,HR-UN,1966486346,7.03,Canada
+155,Cogeco,CCA,1920257236,45.48,Canada
+156,Hudbay Minerals,HBM,1866657792,5.35,Canada
+157,Crombie Real Estate Investment Trust,CRR-UN,1861359872,10.31,Canada
+158,Lumine Group,LMN.V,1860881227,25.09,Canada
+159,Richelieu Hardware,RCH,1823678692,32.51,Canada
+160,NuVista Energy,NVA,1791897826,8.4,Canada
+161,China Gold International Resources,CGG,1790567478,4.52,Canada
+162,First National Financial,FN,1784173165,29.75,Canada
+163,Vermilion Energy,VET,1777283072,10.84,Canada
+164,Superior Plus,SPB,1754018743,7.06,Canada
+165,Killam Apartment REIT,KMP-UN,1711645519,14.47,Canada
+166,Allied Properties REIT,AP-UN,1690313891,13.21,Canada
+167,Ero Copper,ERO,1661180416,16.2,Canada
+168,Parex Resources,PXT,1653653883,15.83,Canada
+169,Pet Valu,PET,1650496345,23.1,Canada
+170,Denison Mines,DNN,1614820736,1.85,Canada
+171,Exchange Income Corporation,EIF,1608423577,34.47,Canada
+172,BlackBerry,BB,1598620928,2.71,Canada
+173,Stelco,STLC,1592049571,28.88,Canada
+174,Freehold Royalties,FRU,1556514519,10.33,Canada
+175,Altus Group,AIF,1548195202,34.05,Canada
+176,InterRent Real Estate Investment Trust,IIP-UN,1521412144,10.37,Canada
+177,Cargojet,CJT,1511349043,87.82,Canada
+178,StorageVault Canada,SVI,1484771376,3.95,Canada
+179,Trisura Group,TSU,1458167455,30.74,Canada
+180,Canfor,CFP,1446267022,12.11,Canada
+181,Canadian Solar,CSIQ,1443712640,22.33,Canada
+182,Equinox Gold,EQX,1433969536,4.56,Canada
+183,Labrador Iron Ore Royalty Corp.,LIF,1426455779,22.29,Canada
+184,Sigma Lithium,SGML,1408539904,12.85,Canada
+185,The North West Company,NWC,1399798495,29.35,Canada
+186,AbCellera,ABCL,1395717632,4.81,Canada
+187,Docebo,DCBO,1393681792,45.94,Canada
+188,International Petroleum,IPCO,1391830437,11.03,Canada
+189,Enghouse Systems,ENGH,1385015580,25.07,Canada
+190,Canada Goose,GOOS,1365592448,14.08,Canada
+191,Tilray,TLRY,1344097536,1.78,Canada
+192,Tamarack Valley Energy,TVE,1343885789,2.41,Canada
+193,First Majestic Silver,AG,1277723904,4.45,Canada
+194,Iamgold,IAG,1258759040,2.55,Canada
+195,Sandstorm Gold,SAND,1252060416,4.18,Canada
+196,Andlauer Healthcare Group,AND,1231961519,29.57,Canada
+197,MDA Ltd.,MDA,1218616907,10.2,Canada
+198,Westshore Terminals Investment,WTE,1199392737,19.19,Canada
+199,Advantage Energy,AAV,1195857117,7.23,Canada
+200,Dundee Precious Metals,DPM,1162108311,6.41,Canada
+201,K92 Mining,KNT,1153842545,4.92,Canada
+202,Badger Infrastructure Solutions,BDGI,1153299733,33.45,Canada
+203,Headwater Exploration,HWX,1151743617,4.87,Canada
+204,Orla Mining,ORLA,1139254144,3.59,Canada
+205,Centerra Gold,CGAU,1128670592,5.23,Canada
+206,Cymbria,CYB,1096113453,48.35,Canada
+207,Innergex Renewable Energy,INE,1083272792,5.3,Canada
+208,Birchcliff Energy,BIR,1067854843,4.01,Canada
+209,Bitfarms,BITF,1016076608,3.15,Canada
+210,Wesdome Gold Mines,WDO,1000481867,6.72,Canada
+211,Seabridge Gold,SA,993105856,11.79,Canada
+212,Jamieson Wellness,JWEL,978880777,23.26,Canada
+213,dentalcorp,DNTL,973190119,5.18,Canada
+214,Foran Mining,FOM,970514733,2.92,Canada
+215,Mullen Group,MTL,963936734,10.95,Canada
+216,Fusion Pharmaceuticals,FUSN,947791936,13.09,Canada
+217,Sprott Inc,SII,931208576,37,Canada
+218,SSR Mining,SSRM,919918272,4.51,Canada
+219,Ballard Power Systems,BLDP,917070400,3.07,Canada
+220,Transcontinental,TCL-A,899602725,10.34,Canada
+221,MAG Silver,MAG,899119488,8.69,Canada
+222,Ivanhoe Electric,IE,891895232,7.46,Canada
+223,Morguard,MRC,888937670,82.21,Canada
+224,MTY Food Group,MTY,878337065,36.14,Canada
+225,Savaria Corporation,SIS,875658835,12.34,Canada
+226,Laurentian Bank of Canada,LB,870682637,19.95,Canada
+227,Precision Drilling Corporation,PDS,866391168,60.39,Canada
+228,Algoma Steel,ASTL,865596160,8.32,Canada
+229,Fortuna Silver Mines,FSM,855023360,2.79,Canada
+230,Cronos Group,CRON,834639616,2.19,Canada
+231,Imax Corp,IMAX,834396480,15.28,Canada
+232,Aurinia Pharmaceuticals,AUPH,830107264,5.74,Canada
+233,Clairvest Group,CVG,825837616,56.28,Canada
+234,Martinrea International,MRE,824120182,10.39,Canada
+235,Kelt Exploration,KEL,823978106,4.24,Canada
+236,Zymeworks,ZYME,821823488,11.74,Canada
+237,NorthWest Healthcare Properties REIT,NWH-UN,810549896,3.31,Canada
+238,NovaGold Resources,NG,799949760,2.39,Canada
+239,New Gold,NGD,799072960,1.16,Canada
+240,Lassonde Industries,LAS-A,790875185,115.94,Canada
+241,Cardinal Energy,CJ,780823837,4.94,Canada
+242,Hut 8 Mining,HUT,777536576,8.74,Canada
+243,Africa Oil,AOI,773115763,1.68,Canada
+244,enCore Energy,EU,770652480,4.25,Canada
+245,Softchoice,SFTC,766506202,12.86,Canada
+246,SilverCrest Metals,SILV,757060288,5.14,Canada
+247,Interfor,IFP,756174966,14.7,Canada
+248,Teekay,TK,749422208,8.24,Canada
+249,Lithium Americas,LAC,698476672,4.33,Canada
+250,Osisko Mining,OSK,693328452,1.87,Canada
+251,Converge Technology Solutions,CTS,685427214,3.35,Canada
+252,SunOpta,STKL,673634624,5.81,Canada
+253,Patriot Battery Metals,PMET.V,671641633,5.09,Canada
+254,GDI Integrated Facility Services,GDI,667438232,28.51,Canada
+255,Fission Uranium,FCU,657222676,0.79,Canada
+256,Trican Well Service,TCW,650685386,3.07,Canada
+257,North American Construction Group,NOA,648178048,24.22,Canada
+258,Enerflex,EFXT,647955840,5.18,Canada
+259,Canaccord Genuity Group,CF,612916107,6,Canada
+260,Neighbourly Pharmacy,NBLY,612004881,13.62,Canada
+261,New Found Gold,NFGC,607424064,3.23,Canada
+262,TerrAscend,TSND,564984302,1.61,Canada
+263,Obsidian Energy,OBE,551277440,6.95,Canada
+264,IsoEnergy,ISO.V,550146982,3.14,Canada
+265,Mercer International,MERC,544173696,8.18,Canada
+266,ECN Capital,ECN,543111427,1.94,Canada
+267,The Real Brokerage,REAX,525402016,2.89,Canada
+268,Frontera Energy,FEC,510510183,5.98,Canada
+269,Artis REIT,AX-UN,488413625,4.52,Canada
+270,Telesat,TSAT,461621152,9.15,Canada
+271,Taseko Mines,TGB,433090496,1.5,Canada
+272,Thinkific Labs,THNC,427488893,2.63,Canada
+273,Silvercorp Metals,SVM,424368032,2.4,Canada
+274,PolyMet,PLM,408365984,2.1,Canada
+275,Lion Electric,LEV,386776352,1.71,Canada
+276,HIVE Blockchain Technologies,HIVE,377712096,4.08,Canada
+277,TMC the metals company,TMC,376831424,1.23,Canada
+278,ESSA Pharma,EPIX,362752416,8.2,Canada
+279,Sundial Growers,SNDL,360593984,1.38,Canada
+280,Pizza Pizza,PZA,339304401,10.49,Canada
+281,Uranium Royalty,UROY,333293408,2.79,Canada
+282,Skeena Resources,SKE,322082528,3.57,Canada
+283,Canopy Growth,CGC,313434240,3.44,Canada
+284,McEwen Mining,MUX,307730240,6.23,Canada
+285,Endeavour Silver,EXK,299551488,1.5,Canada
+286,VersaBank,VBNK,292566368,11.25,Canada
+287,D-Wave Quantum,QBTS,291068960,1.82,Canada
+288,Coelacanth Energy,CEI.V,289675517,0.55,Canada
+289,Marathon Gold,MOZ,281397761,0.6,Canada
+290,Corby Spirit and Wine,CSW-A,271442095,9.66,Canada
+291,K-Bro Linen,KBL,267645898,25.03,Canada
+292,Repare Therapeutics,RPTX,259097664,6.15,Canada
+293,Ascot Resources,AOT,254016610,0.41,Canada
+294,Gold Royalty Corp,GROY,243357424,1.67,Canada
+295,Kingsway Financial Services,KFS,243306912,8.6,Canada
+296,Marimaca Copper,MARI,241136852,2.59,Canada
+297,Tucows,TCX,236643744,21.72,Canada
+298,Taiga Building Products,TBL,236639133,2.19,Canada
+299,Los Andes Copper,LA.V,235184503,7.96,Canada
+300,Vizsla Silver,VZLA,230873344,1.11,Canada
+301,Galiano Gold,GAU,226598320,0.9999,Canada
+302,Metalla Royalty & Streaming,MTA,225251168,2.51,Canada
+303,Aimia,AIM,224251170,2.37,Canada
+304,Standard Lithium,SLI,214771360,1.21,Canada
+305,Profound Medical,PROF,202432240,8.27,Canada
+306,OrganiGram Holdings,OGI,189136784,2.01,Canada
+307,Aurora Cannabis,ACB,188011504,3.4,Canada
+308,City Office REIT,CIO,186512800,4.67,Canada
+309,Gran Tierra Energy,GTE,183751408,5.52,Canada
+310,ReconAfrica,0XD.F,179851840,0.81,Canada
+311,New Pacific Metals,NEWP,179767344,1.05,Canada
+312,Nouveau Monde Graphite,NMG,179456896,2.64,Canada
+313,EMX Royalty,EMX,169651504,1.5,Canada
+314,Osisko Development,ODV,168889040,2.01,Canada
+315,Western Copper and Gold,WRN,167751920,1.01,Canada
+316,Sylogist,SYZ,159022274,6.75,Canada
+317,Cybin,CYBN,157152032,0.3825,Canada
+318,Tidewater Renewables,LCFS,156885919,4.52,Canada
+319,Arizona Metals,AMC,154667674,1.33,Canada
+320,GoldMining Inc.,GLDG,151591104,0.786,Canada
+321,Forsys Metals,FSY,144518239,0.74,Canada
+322,Canacol Energy,CNE,141906581,4.16,Canada
+323,Laramide Resources,LAM,140647284,0.61,Canada
+324,High Tide,HITI,137631904,1.75,Canada
+325,Andrew Peller,ADW-A,136019489,2.96,Canada
+326,Loop Industries,LOOP,135457360,2.85,Canada
+327,Sierra Metals,SMT,135346070,0.65,Canada
+328,Sangoma Technologies,SANG,129452784,3.85,Canada
+329,Northern Dynasty Minerals,NAK,129234720,0.24,Canada
+330,Largo,LGO,123960424,1.93,Canada
+331,Bragg Gaming Group,BRAG,122300856,5.38,Canada
+332,Zentek,ZTEK,121588920,1.206,Canada
+333,Mega Uranium,MGA,115176862,0.31,Canada
+334,Yellow Pages (Canada),Y,106928203,7.78,Canada
+335,Platinum Group Metals,PLG,101475696,0.9902,Canada
+336,Westport Fuel Systems,WPRT,101031088,5.86,Canada
+337,Alithya Group,ALYA,99728376,1.13,Canada
+338,Tanzanian Gold Corporation,TRX,97155616,0.3433,Canada
+339,Vox Royalty,VOXR,95767816,1.95,Canada
+340,Village Farms International,VFF,89293592,0.81,Canada
+341,Achieve Life Sciences,ACHV,84663200,4,Canada
+342,illumin,ILLM,84095608,1.63,Canada
+343,Theratechnologies,THTX,83710040,1.7,Canada
+344,Velan,VLN,83114975,3.85,Canada
+345,Postmedia Network Canada,PNC-A,81958296,0.9,Canada
+346,Li-Cycle,LICY,79962952,0.4486,Canada
+347,Oncolytics Biotech,ONCY,74866776,1.02,Canada
+348,Trilogy Metals,TMQ,73910016,0.4438,Canada
+349,PyroGenesis Canada,PYR,69198400,0.3799,Canada
+350,POET Technologies,POET,66489260,1.39,Canada
+351,Xebec Adsorption,XBC,58696946,0.38,Canada
+352,Avino Silver &amp; Gold Mines,ASM,57971404,0.4608,Canada
+353,GreenPower Motor Company,GP,53604008,2.14,Canada
+354,Milestone Pharmaceuticals,MIST,52903300,1.58,Canada
+355,Integra Resources,ITRG,52752348,0.767,Canada
+356,A2Z Smart Technologies,AZ,51919180,1.26,Canada
+357,Fury Gold Mines,FURY,48718888,0.33,Canada
+358,Americas Gold and Silver Corp,USAS,46371780,0.21,Canada
+359,Mogo,MOGO,42242984,1.71,Canada
+360,PopReach,POPR.V,37326899,0.13,Canada
+361,DIRTT Environmental Solutions,DRTT,35057372,0.3343,Canada
+362,Cielo Waste Solutions,CMC.V,33559327,0.3,Canada
+363,East Side Games,EAGR,33206726,0.41,Canada
+364,Electra Meccanica,SOLO,31958326,0.2679,Canada
+365,Acasti Pharma,ACST,31393996,3.34,Canada
+366,Bear Creek Mining,BCM.V,30332682,0.13,Canada
+367,Sphere 3D,ANY,29715470,2.07,Canada
+368,Aptose Biosciences,APTO,28900512,1.84,Canada
+369,Akumin,AKU,26271268,0.2887,Canada
+370,Silver One Resources,SVE.V,25375259,0.1,Canada
+371,Meta Materials,MMAT,22560000,4,Canada
+372,Almaden Minerals,AAU,20098036,0.137,Canada
+373,Draganfly,DPRO,18332928,0.36,Canada
+374,Greenbrook TMS,GBNH,16369610,0.3827,Canada
+375,Pineapple Financial,PAPL,9911132,1.38,Canada
+376,IMV,IMV,9808230,0.8225,Canada
+377,DAVIDsTEA,DTEAF,9355357,0.3514,Canada
+378,Liquid Media Group,YVR,9171556,0.43,Canada
+379,Titan Medical,TMD,7520126,0.07,Canada
+380,Bruush Oral Care (Brüush),BRSH,7269911,0.072,Canada
+381,Orosur Mining,OMI.V,6981221,0.04,Canada
+382,Playgon Games,DEAL.V,6410498,0.02,Canada
+383,Versus Systems,VS,5506432,2.1681,Canada
+384,Zoomd Technologies,ZOMD.V,4732691,0.05,Canada
+385,Lucy Scientific Discovery,LSDI,4157468,0.2356,Canada
+386,Field Trip Health,FTHW.V,3701866,0.04,Canada
+387,Wolverine Energy and Infrastructure,WEII.V,3274071,0.03,Canada
+388,Neptune Wellness Solutions,NEPT,1926117,0.425,Canada
+389,Trillium Gold Mines,TGM.V,775193,0.05,Canada
+390,Kuuhubb,KUU.V,715946,0.01,Canada
+391,Playground Ventures,PLAY.CN,594143,0.01,Canada
+392,Skylight Health Group,SLHG.V,581373,0.01,Canada
+393,Great Panther Mining,GPLDF,47,1.00E-06,Canada
