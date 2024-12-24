@@ -12,7 +12,6 @@ Rank,Company Name,Symbol,marketcap,price (USD),country
 11,Alimentation Couche-Tard,ATD,60405572561,62.69,Canada
 12,Scotiabank,BNS,57557393408,47.34,Canada
 13,Constellation Software,CSU,57486696381,2712.72,Canada
-14,lululemon athletica,LULU,55960657920,443.46,Canada
 15,Suncor Energy,SU,43551449088,33.59,Canada
 16,Manulife Financial,MFC,43444449280,23.99,Canada
 17,CIBC,CM,43218411520,46.32,Canada
@@ -41,7 +40,6 @@ Rank,Company Name,Symbol,marketcap,price (USD),country
 40,Power Corporation of Canada,POW,19083037071,28.96,Canada
 41,Pembina Pipeline,PPL,18833414144,34.23,Canada
 42,Wheaton Precious Metals,WPM,18479216640,40.74,Canada
-43,Cameco,CCJ,18137860096,41.73,Canada
 44,Hydro One,H,18032463480,30.1,Canada
 45,George Weston,WN,17590963948,129.84,Canada
 46,Brookfield Asset Management,BAM,15860882432,40.57,Canada
@@ -94,7 +92,6 @@ Rank,Company Name,Symbol,marketcap,price (USD),country
 93,Alamos Gold,AGI,4671647232,11.75,Canada
 94,Northland Power,NPI,4462443884,17.56,Canada
 95,Celestica,CLS,4433123840,37.2,Canada
-96,Crescent Point Energy,CPG,4400858624,7.02,Canada
 97,PrairieSky Royalty,PSK,4215523156,17.64,Canada
 98,RioCan REIT,REI-UN,4151479936,13.82,Canada
 99,Whitecap Resources,WCP,4111717363,6.78,Canada
