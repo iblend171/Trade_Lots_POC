@@ -153,7 +153,7 @@ Rank,Company Name,Symbol,marketcap,price (USD),country
 155,Cogeco,CCA,1920257236,45.48,Canada
 156,Hudbay Minerals,HBM,1866657792,5.35,Canada
 157,Crombie Real Estate Investment Trust,CRR-UN,1861359872,10.31,Canada
-158,Lumine Group,LMN.V,1860881227,25.09,Canada
+158,Lumine Group,LMN-V,1860881227,25.09,Canada
 159,Richelieu Hardware,RCH,1823678692,32.51,Canada
 160,NuVista Energy,NVA,1791897826,8.4,Canada
 161,China Gold International Resources,CGG,1790567478,4.52,Canada
@@ -248,7 +248,7 @@ Rank,Company Name,Symbol,marketcap,price (USD),country
 250,Osisko Mining,OSK,693328452,1.87,Canada
 251,Converge Technology Solutions,CTS,685427214,3.35,Canada
 252,SunOpta,STKL,673634624,5.81,Canada
-253,Patriot Battery Metals,PMET.V,671641633,5.09,Canada
+253,Patriot Battery Metals,PMET-V,671641633,5.09,Canada
 254,GDI Integrated Facility Services,GDI,667438232,28.51,Canada
 255,Fission Uranium,FCU,657222676,0.79,Canada
 256,Trican Well Service,TCW,650685386,3.07,Canada
@@ -259,7 +259,7 @@ Rank,Company Name,Symbol,marketcap,price (USD),country
 261,New Found Gold,NFGC,607424064,3.23,Canada
 262,TerrAscend,TSND,564984302,1.61,Canada
 263,Obsidian Energy,OBE,551277440,6.95,Canada
-264,IsoEnergy,ISO.V,550146982,3.14,Canada
+264,IsoEnergy,ISO-V,550146982,3.14,Canada
 265,Mercer International,MERC,544173696,8.18,Canada
 266,ECN Capital,ECN,543111427,1.94,Canada
 267,The Real Brokerage,REAX,525402016,2.89,Canada
@@ -283,7 +283,7 @@ Rank,Company Name,Symbol,marketcap,price (USD),country
 285,Endeavour Silver,EXK,299551488,1.5,Canada
 286,VersaBank,VBNK,292566368,11.25,Canada
 287,D-Wave Quantum,QBTS,291068960,1.82,Canada
-288,Coelacanth Energy,CEI.V,289675517,0.55,Canada
+288,Coelacanth Energy,CEI-V,289675517,0.55,Canada
 289,Marathon Gold,MOZ,281397761,0.6,Canada
 290,Corby Spirit and Wine,CSW-A,271442095,9.66,Canada
 291,K-Bro Linen,KBL,267645898,25.03,Canada
@@ -294,7 +294,7 @@ Rank,Company Name,Symbol,marketcap,price (USD),country
 296,Marimaca Copper,MARI,241136852,2.59,Canada
 297,Tucows,TCX,236643744,21.72,Canada
 298,Taiga Building Products,TBL,236639133,2.19,Canada
-299,Los Andes Copper,LA.V,235184503,7.96,Canada
+299,Los Andes Copper,LA-V,235184503,7.96,Canada
 300,Vizsla Silver,VZLA,230873344,1.11,Canada
 301,Galiano Gold,GAU,226598320,0.9999,Canada
 302,Metalla Royalty & Streaming,MTA,225251168,2.51,Canada
@@ -305,7 +305,7 @@ Rank,Company Name,Symbol,marketcap,price (USD),country
 307,Aurora Cannabis,ACB,188011504,3.4,Canada
 308,City Office REIT,CIO,186512800,4.67,Canada
 309,Gran Tierra Energy,GTE,183751408,5.52,Canada
-310,ReconAfrica,0XD.F,179851840,0.81,Canada
+310,ReconAfrica,0XD-F,179851840,0.81,Canada
 311,New Pacific Metals,NEWP,179767344,1.05,Canada
 312,Nouveau Monde Graphite,NMG,179456896,2.64,Canada
 313,EMX Royalty,EMX,169651504,1.5,Canada
@@ -355,17 +355,17 @@ Rank,Company Name,Symbol,marketcap,price (USD),country
 357,Fury Gold Mines,FURY,48718888,0.33,Canada
 358,Americas Gold and Silver Corp,USAS,46371780,0.21,Canada
 359,Mogo,MOGO,42242984,1.71,Canada
-360,PopReach,POPR.V,37326899,0.13,Canada
+360,PopReach,POPR-V,37326899,0.13,Canada
 361,DIRTT Environmental Solutions,DRTT,35057372,0.3343,Canada
-362,Cielo Waste Solutions,CMC.V,33559327,0.3,Canada
+362,Cielo Waste Solutions,CMC-V,33559327,0.3,Canada
 363,East Side Games,EAGR,33206726,0.41,Canada
 364,Electra Meccanica,SOLO,31958326,0.2679,Canada
 365,Acasti Pharma,ACST,31393996,3.34,Canada
-366,Bear Creek Mining,BCM.V,30332682,0.13,Canada
+366,Bear Creek Mining,BCM-V,30332682,0.13,Canada
 367,Sphere 3D,ANY,29715470,2.07,Canada
 368,Aptose Biosciences,APTO,28900512,1.84,Canada
 369,Akumin,AKU,26271268,0.2887,Canada
-370,Silver One Resources,SVE.V,25375259,0.1,Canada
+370,Silver One Resources,SVE-V,25375259,0.1,Canada
 371,Meta Materials,MMAT,22560000,4,Canada
 372,Almaden Minerals,AAU,20098036,0.137,Canada
 373,Draganfly,DPRO,18332928,0.36,Canada
@@ -376,16 +376,16 @@ Rank,Company Name,Symbol,marketcap,price (USD),country
 378,Liquid Media Group,YVR,9171556,0.43,Canada
 379,Titan Medical,TMD,7520126,0.07,Canada
 380,Bruush Oral Care (Brüush),BRSH,7269911,0.072,Canada
-381,Orosur Mining,OMI.V,6981221,0.04,Canada
-382,Playgon Games,DEAL.V,6410498,0.02,Canada
+381,Orosur Mining,OMI-V,6981221,0.04,Canada
+382,Playgon Games,DEAL-V,6410498,0.02,Canada
 383,Versus Systems,VS,5506432,2.1681,Canada
-384,Zoomd Technologies,ZOMD.V,4732691,0.05,Canada
+384,Zoomd Technologies,ZOMD-V,4732691,0.05,Canada
 385,Lucy Scientific Discovery,LSDI,4157468,0.2356,Canada
-386,Field Trip Health,FTHW.V,3701866,0.04,Canada
-387,Wolverine Energy and Infrastructure,WEII.V,3274071,0.03,Canada
+386,Field Trip Health,FTHW-V,3701866,0.04,Canada
+387,Wolverine Energy and Infrastructure,WEII-V,3274071,0.03,Canada
 388,Neptune Wellness Solutions,NEPT,1926117,0.425,Canada
-389,Trillium Gold Mines,TGM.V,775193,0.05,Canada
-390,Kuuhubb,KUU.V,715946,0.01,Canada
-391,Playground Ventures,PLAY.CN,594143,0.01,Canada
-392,Skylight Health Group,SLHG.V,581373,0.01,Canada
+389,Trillium Gold Mines,TGM-V,775193,0.05,Canada
+390,Kuuhubb,KUU-V,715946,0.01,Canada
+391,Playground Ventures,PLAY-CN,594143,0.01,Canada
+392,Skylight Health Group,SLHG-V,581373,0.01,Canada
 393,Great Panther Mining,GPLDF,47,1.00E-06,Canada
